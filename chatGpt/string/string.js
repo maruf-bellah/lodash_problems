@@ -12,7 +12,7 @@ function countVowel(){
     const search = srtingVowel.length;
     return search;
 }
-console.log( 'stringVowel'+ "=" +  countVowel());
+// console.log( 'stringVowel'+ "=" +  countVowel());
 
 // Consonant Count:
 // Create a function that counts the number of consonants in a given string.
@@ -72,3 +72,30 @@ console.log( 'stringVowel'+ "=" +  countVowel());
 
 // Feel free to continue this pattern by modifying and extending the problems. The goal is to cover a wide range of string manipulation concepts, helping learners gain proficiency in JavaScript.
 
+
+
+function countVowels(str) {
+    str = str.toLowerCase();
+    const vowelRegex = /[aeiou]/g;
+    const vowelMatches = str.match(vowelRegex);
+    return vowelMatches ? vowelMatches.length : 0;
+  }
+  
+  const inputString = "Hello, World!";
+  const result = countVowels(inputString);
+  
+  console.log(`Number of vowels in "${inputString}": ${result}`);
+
+
+
+  function countVowel(str) {
+
+
+
+    str = str.toUppercase()
+    return str
+  }
+
+  const inputStringVowel = 'Maruf Bellah';
+  const result1 = countVowel(inputStringVowel);
+  console.log(result1);
